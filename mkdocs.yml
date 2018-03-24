@@ -1,0 +1,90 @@
+site_name: Why, Scott, WHY?!?
+site_url: https://ddrscott.github.io/
+repo_name: null
+repo_url: https://github.com/ddrscott/ddrscott.site
+# Copyright
+copyright: 'Copyright &copy; 2014 - 2018 Scott Pierce'
+
+theme:
+  name: material
+  custom_dir: custom_theme
+  logo:
+    icon: "\uE8AF"
+  feature:
+    tabs: false
+  palette:
+    primary: 'blue grey'
+    accent: 'orange'
+
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/ddrscott'
+    - type: 'twitter'
+      link: 'https://twitter.com/_ddrscott_'
+  disqus: 'ddrscottgithubio'
+
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+google_analytics:
+  - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
+  - 'auto'
+
+plugins: ['search']
+
+pages:
+  - Home: index.md
+  #<pages>
+  - '2018':
+    - A Rustic Journey Through Stream Stats: blog/2018/stream-stats-in-rust.markdown
+    - Getting Rusty with Vim: blog/2018/getting-rusty-with-vim.markdown
+    - 'Dev Blog Tools :: A Quick Tour of My Setup': blog/2018/blog-setup.markdown
+  - '2017':
+    - Base16 Shell: blog/2017/base16-shell.markdown
+    - How to Get Better At Anything: blog/2017/how-to-get-better-at-anything.markdown
+    - FZF + WordNet = Dictionary: blog/2017/fzf-dictionary.markdown
+    - GNU Screen: blog/2017/gnu-screen.markdown
+    - What the SQL?!? Lateral Joins: blog/2017/what-the-sql-lateral.markdown
+    - What the SQL?!? WINDOW: blog/2017/what-the-sql-window.markdown
+    - What the SQL?!? Recursive: blog/2017/what-the-sql-recursive.markdown
+    - Vim Send Text: blog/2017/vim-send-text.markdown
+  - '2016':
+    - 'PSA: Vim Modulo ''%'' Returns Negative Numbers!': blog/2016/negative-modulo.markdown
+    - Photography Refactored: blog/2016/photography-lightening-talk.markdown
+    - 'Ruby Abuse: How Not to Write Ruby, But Still Have Fun': blog/2016/ruby-abuse.markdown
+    - Making a Window Submode in Vim: blog/2016/making-a-window-submode.markdown
+    - ANSI Codes with Character: blog/2016/ansi-codes-with-character.markdown
+    - 'Vim Toggle Movement: I Just Want to Go Home': blog/2016/vim-toggle-movement.markdown
+    - Yank Without Jank: blog/2016/yank-without-jank.markdown
+    - Sensible Horizontal Scroll in Vim: blog/2016/sidescroll.markdown
+    - 'Vim Side Search: Making Search Fun Again': blog/2016/side-search.markdown
+    - BS to the Black Hole: blog/2016/bs-to-the-black-hole.markdown
+  - '2014':
+    - Tech Stack 2014 Edition: blog/2014/tech-stack-2014-edition.markdown
+    - Octopress to the Rescue: blog/2014/octopress-to-the-rescue.markdown
+  #</pages>
