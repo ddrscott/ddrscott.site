@@ -59,6 +59,7 @@ plugins: ['search']
 
 pages:
   - Home: index.md
+  - Projects: projects.md
   - '2018':
     - 'A Rustic Journey Through Stream Stats': blog/2018/stream-stats-in-rust.markdown
     - 'Getting Rusty with Vim': blog/2018/getting-rusty-with-vim.markdown
