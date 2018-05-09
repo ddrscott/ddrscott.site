@@ -11,7 +11,7 @@
 
 + Scott makes posts. A teacher at heart who loves sharing tips and tricks to anyone who will listen. May these articles live on longer than him so future readers can appreciate how easy they have it now. Writing code in a terminal using Vim? What's that?!
 
-+ Scott makes jokes. His sense of humor is an acquired taste full of puns and absurdities. Trail and error is used extensively throughout the process. One of them has got to be funny.
++ Scott makes jokes. His sense of humor is an acquired taste full of puns and absurdities. Trail and error is used extensively throughout the process. One of them has _got_ to be funny.
 
 ## Q & A
 
@@ -27,6 +27,6 @@ Type literally: `:qa!` then press `<enter>`
 
 Ruby. It's not the fastest, but the most succinct for my uses. This may change depending on the project. Some tasks need speed, some may already be mostly implemented in another language's ecosystem, and sometimes Ruby is a bad team fit if everyone isn't comfortable with it. If I'm on a desert, I'll write Ruby in the sand. `10.times { p "HELP" }`
 
-### What projects have you done?
+### What projects have you worked on?
 
 See [projects](projects/).
