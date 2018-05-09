@@ -30,3 +30,7 @@ Ruby. It's not the fastest, but the most succinct for my uses. This may change d
 ### What projects have you worked on?
 
 See [projects](projects/).
+
+### What about my question?
+
+Do you have a question for Scott? Ask in the comments and he'll post an answer here or as a separate post.
