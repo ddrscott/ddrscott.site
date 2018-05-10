@@ -1,5 +1,7 @@
 ---
 date: 2016-04-14 05:51:11 -0500
+title: "Vim Toggle Movement: I Just Want to Go Home"
+image: /images/i_just_want_to_go_home.png 
 ---
 # Vim Toggle Movement: I Just Want to Go Home
 <img src="/images/i_just_want_to_go_home.png " alt='I just want to go home' />

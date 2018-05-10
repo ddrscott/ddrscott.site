@@ -1,5 +1,7 @@
 ---
 date: 2016-04-29 09:00:00 -0500
+title: Making a Window Submode in Vim
+image: /images/window-mode-feature.png
 ---
 # Making a Window Submode in Vim
 <img src="/images/window-mode-feature.png" alt='Header Image' />

@@ -1,5 +1,7 @@
 ---
 date: 2018-03-22 02:45 America/Chicago
+title: "Dev Blog Tools :: A Quick Tour of My Setup"
+image: /images/my_blog_setup.png
 description: Tools I use to create posts, screenshots, code snippets, gifs, screencasts, and other interesting things.
 ---
 # Dev Blog Tools :: A Quick Tour of My Setup

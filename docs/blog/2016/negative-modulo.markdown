@@ -1,5 +1,7 @@
 ---
 date: 2016-05-28 09:00:00 -0500
+title: "PSA: Vim Modulo '%' Returns Negative Numbers!"
+image: /images/einstein_mod.jpg
 ---
 # PSA: Vim Modulo '%' Returns Negative Numbers!
 <img src="/images/einstein_mod.jpg" alt='-10 % 3 != -1' />

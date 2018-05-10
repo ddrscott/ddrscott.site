@@ -1,5 +1,7 @@
 ---
 date: 2016-04-13 00:48:47 -0500
+title: BS to the Black Hole
+image: /images/blackhole_bs.png
 ---
 # BS to the Black Hole
 

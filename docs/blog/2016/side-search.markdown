@@ -1,5 +1,7 @@
 ---
 date: 2016-05-27 09:00:00 -0500
+title: "Vim Side Search: Making Search Fun Again"
+image: /images/vim_ag_unicorn.png
 ---
 # Vim Side Search: Making Search Fun Again
 <img src="/images/vim_ag_unicorn.png" alt='Vim + Ag = Unicorn' />

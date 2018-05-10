@@ -1,5 +1,7 @@
 ---
 date: 2016-07-11 09:00:00 -0500
+title: Photography Refactored
+image: /images/photography-lightening-talk.png 
 ---
 # Photography Refactored
 <img src="/images/photography-lightening-talk.png " alt='Photography Lightening Talk' />

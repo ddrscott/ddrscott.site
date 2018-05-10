@@ -1,5 +1,7 @@
 ---
 date: 2017-06-12 12:30:00-0600
+title: "FZF + WordNet = Dictionary"
+image: /images/fzf_dictionary_demo.gif
 ---
 # FZF + WordNet = Dictionary
 

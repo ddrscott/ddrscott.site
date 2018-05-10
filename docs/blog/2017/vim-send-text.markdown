@@ -1,5 +1,6 @@
 ---
 date: 2017-04-10 12:30:00-0600
+title: Vim Send Text
 ---
 # Vim Send Text
 

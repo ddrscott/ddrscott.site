@@ -1,5 +1,7 @@
 ---
 date: 2017-03-08 12:30:00-0600
+title: What the SQL?!? Lateral Joins
+image: /images/what_the_sql_lateral.png
 ---
 # What the SQL?!? Lateral Joins
 

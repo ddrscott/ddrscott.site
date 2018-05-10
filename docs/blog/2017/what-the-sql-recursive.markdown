@@ -1,5 +1,7 @@
 ---
 date: 2017-03-15 12:30:00-0600
+title: What the SQL?!? Recursive
+image: /images/i_heart_recursion.png
 ---
 # What the SQL?!? Recursive
 

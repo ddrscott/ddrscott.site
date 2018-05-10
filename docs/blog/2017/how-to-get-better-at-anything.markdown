@@ -1,5 +1,7 @@
 ---
 date: 2017-02-07 05:30:06 -0600
+title: How to Get Better At Anything
+iamge: /images/better.jpg
 ---
 # How to Get Better At Anything
 <img src="/images/better.jpg" alt="Better Title" />

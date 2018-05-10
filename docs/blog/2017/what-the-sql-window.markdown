@@ -1,5 +1,7 @@
 ---
 date: 2017-03-22 12:30:00-0600
+title: What the SQL?!? Recursive
+image: /images/what_the_sql_window.png
 ---
 # What the SQL?!? WINDOW
 <img src="/images/what_the_sql_window.png" alt='What the SQL?!?  WINDOW' />

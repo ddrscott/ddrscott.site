@@ -1,6 +1,7 @@
 ---
 date: 2017-04-13 12:30:00-0600
-image: 
+title: Base16 Shell
+image: /images/base16-featured.png
 published: true
 ---
 # Base16 Shell

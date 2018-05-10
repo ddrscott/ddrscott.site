@@ -1,5 +1,6 @@
 ---
 date: 2017-06-01 12:30:00-0600
+title: GNU Screen
 image: /images/gnu-screen-featured.jpg
 ---
 # GNU Screen

@@ -3,6 +3,8 @@ date: 2018-03-04 06:30 America/Chicago
 comments: true
 categories: Rust vim
 published: true
+image: /images/rusty-featured.png
+title: Getting Rusty with Vim
 ---
 # Getting Rusty with Vim
 <img class="featured" src="/images/rusty-featured.png" alt="Vim Screenshot" />

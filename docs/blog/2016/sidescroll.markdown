@@ -1,5 +1,7 @@
 ---
 date: 2016-05-05 09:00:00 -0500
+title: Sensible Horizontal Scroll in Vim
+image: /images/sidescroll-feature.png
 ---
 # Sensible Horizontal Scroll in Vim
 <img src="/images/sidescroll-feature.png" alt='I heart sidescroll' />

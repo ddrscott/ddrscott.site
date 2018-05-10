@@ -1,5 +1,7 @@
 ---
 date: 2016-04-25 04:51:11 -0500
+title: Yank Without Jank
+image: /images/yank-default.gif 
 ---
 # Yank Without Jank
 <img src="/images/yank-default.gif " alt='Yank default jump' />

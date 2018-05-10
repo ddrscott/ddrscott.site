@@ -1,5 +1,6 @@
 ---
 date: 2016-07-26 11:11:51 -0500
+title: ANSI Codes with Character
 ---
 # ANSI Codes with Character
 This was a lightening talk given to the office about ANSI Escape Codes. Most of

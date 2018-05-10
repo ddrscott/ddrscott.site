@@ -3,8 +3,8 @@ date: 2018-05-04 12:45 America/Chicago
 comments: true
 categories: Blog
 published: true
+title: Move to MkDocs
 image: /images/2018/mkdocs-features.png
-description: Move to MkDocs
 ---
 
 I've upgraded to [MkDocs][] from [Octopress][]. The [Octopress][] installation I've been using was from 2014 (4 years old) and was missing features for search, long form writing, multi-part posts, and books.

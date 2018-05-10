@@ -1,5 +1,6 @@
 ---
 date: 2016-04-30 05:51:11 -0500
+title: "Ruby Abuse: How Not to Write Ruby, But Still Have Fun"
 ---
 # Ruby Abuse: How Not to Write Ruby, But Still Have Fun
 <!-- more -->
