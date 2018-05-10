@@ -1,0 +1,90 @@
+site_name: Why, Scott, WHY?!?
+site_url: https://ddrscott.github.io/
+repo_name: null
+repo_url: https://github.com/ddrscott/ddrscott.site
+# Copyright
+copyright: 'Copyright &copy; 2014 - 2018 Scott Pierce'
+
+theme:
+  name: material
+  custom_dir: custom_theme
+  logo:
+    icon: "\uE8AF"
+  feature:
+    tabs: false
+  palette:
+    primary: 'blue grey'
+    accent: 'orange'
+
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/ddrscott'
+    - type: 'twitter'
+      link: 'https://twitter.com/_ddrscott_'
+  disqus: 'ddrscottgithubio'
+
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+google_analytics:
+  - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
+  - 'auto'
+
+plugins: ['search']
+
+pages:
+  - Home: index.md
+  #<pages>
+  - 2018:
+    - 'My Blog Setup': blog/2018/2018-03-22-blog-setup.markdown
+    - 'Stream Stats in Rust': blog/2018/2018-03-12-stream-stats-in-rust.markdown
+    - 'Getting Rusty with Vim': blog/2018/2018-03-04-getting-rusty-with-vim.markdown
+  - 2017:
+    - 'fzf-dictionary': blog/2017/2017-06-12-fzf-dictionary.markdown
+    - 'gnu-screen': blog/2017/2017-06-01-gnu-screen.markdown
+    - 'base16-shell': blog/2017/2017-04-13-base16-shell.markdown
+    - 'vim-send-text': blog/2017/2017-04-10-vim-send-text.markdown
+    - 'what-the-sql-window': blog/2017/2017-03-22-what-the-sql-window.markdown
+    - 'what-the-sql-recursive': blog/2017/2017-03-15-what-the-sql-recursive.markdown
+    - 'what-the-sql-lateral': blog/2017/2017-03-08-what-the-sql-lateral.markdown
+    - 'how-to-get-better-at-anything': blog/2017/2017-02-07-how-to-get-better-at-anything.markdown
+  - 2016:
+    - 'ansi-codes-with-character': blog/2016/2016-07-26-ansi-codes-with-character.markdown
+    - 'photography-lightening-talk': blog/2016/2016-07-11-photography-lightening-talk.markdown
+    - 'negative-modulo': blog/2016/2016-05-28-negative-modulo.markdown
+    - 'side-search': blog/2016/2016-05-27-side-search.markdown
+    - 'sidescroll': blog/2016/2016-05-05-sidescroll.markdown
+    - 'ruby-abuse': blog/2016/2016-04-30-ruby-abuse.markdown
+    - 'making-a-window-submode': blog/2016/2016-04-23-making-a-window-submode.markdown
+    - 'yank-without-jank': blog/2016/2016-04-20-yank-without-jank.markdown
+    - 'vim-toggle-movement': blog/2016/2016-04-14-vim-toggle-movement.markdown
+    - 'bs-to-the-black-hole': blog/2016/2016-04-13-bs-to-the-black-hole.markdown
+  - 2014:
+    - 'tech-stack-2014-edition': blog/2014/2014-05-09-tech-stack-2014-edition.markdown
+    - 'octopress-to-the-rescue': blog/2014/2014-04-16-octopress-to-the-rescue.markdown
+  #</pages>
