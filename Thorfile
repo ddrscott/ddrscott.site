@@ -6,6 +6,18 @@ require 'pry'
 require 'yaml'
 
 class CLI < Thor
+  desc 'deploy', 'deploy to ddrscott.github.io'
+  def deploy
+    site_path = ENV['SITE_PATH'] || '../ddrscott.github.io'
+    system("mkdocs build --site-dir #{site_path}") || raise('Could not build site!')
+    commit_msg = `git log --pretty=oneline --abbrev-commit -1 | head -1`.strip
+    Dir.chdir(site_path) do
+      system('git add .') || raise('Could not add files!')
+      system(%(git commit -m "#{commit_msg}")) || raise('Could not commit files!')
+      system('git push') || raise('Could not push changes!')
+    end
+  end
+
   desc 'pages', 'generate pages/blog section'
   def pages
     pattern = %r{(#\<pages>)(.*)(#\</pages>)}m
