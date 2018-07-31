@@ -75,14 +75,16 @@ pages:
     - 'BS to the Black Hole': blog/2016/bs-to-the-black-hole.markdown
     - 'PSA: Vim Modulo ''%'' Returns Negative Numbers!': blog/2016/negative-modulo.markdown
   - SQL: 
-    - 'What the SQL?!? Lateral Joins': blog/2017/what-the-sql-lateral.markdown
-    - 'What the SQL?!? WINDOW': blog/2017/what-the-sql-window.markdown
-    - 'What the SQL?!? Recursive': blog/2017/what-the-sql-recursive.markdown
+    - 'What the SQL?! Lateral Joins': blog/2017/what-the-sql-lateral.markdown
+    - 'What the SQL?! WINDOW': blog/2017/what-the-sql-window.markdown
+    - 'What the SQL?! Recursive': blog/2017/what-the-sql-recursive.markdown
+    - 'What the SQL?! JOIN me at UNION Station': blog/2018/join-me-at-union-station.markdown
   - '2018':
     - 'Move to MkDocs': blog/2018/move-to-mkdocs.markdown
     - 'A Rustic Journey Through Stream Stats': blog/2018/stream-stats-in-rust.markdown
     - 'Getting Rusty with Vim': blog/2018/getting-rusty-with-vim.markdown
     - 'Dev Blog Tools :: A Quick Tour of My Setup': blog/2018/blog-setup.markdown
+    - 'What the SQL?! JOIN me at UNION Station': blog/2018/join-me-at-union-station.markdown
   - '2017':
     - 'Base16 Shell': blog/2017/base16-shell.markdown
     - 'How to Get Better At Anything': blog/2017/how-to-get-better-at-anything.markdown
