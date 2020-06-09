@@ -4,7 +4,7 @@ comments: true
 categories: SQL Python
 published: true
 title: Slice and Dice SQL with SQL Ninja
-image: /images/stream_stats_demo.png
+image: /images/2020/sql-ninja-head.png
 description: SQL + Jinja = SQL Templating Done Right™
 ---
 # Slice and Dice SQL with [SQL Ninja](https://github.com/ddrscott/sql-ninja)
