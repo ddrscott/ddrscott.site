@@ -75,10 +75,13 @@ pages:
     - 'BS to the Black Hole': blog/2016/bs-to-the-black-hole.markdown
     - 'PSA: Vim Modulo ''%'' Returns Negative Numbers!': blog/2016/negative-modulo.markdown
   - SQL: 
+    - 'SQL + Jinja = Templating Done Right™': blog/2020/sql-ninja.markdown
     - 'What the SQL?! Lateral Joins': blog/2017/what-the-sql-lateral.markdown
     - 'What the SQL?! WINDOW': blog/2017/what-the-sql-window.markdown
     - 'What the SQL?! Recursive': blog/2017/what-the-sql-recursive.markdown
     - 'What the SQL?! JOIN me at UNION Station': blog/2018/join-me-at-union-station.markdown
+  - '2020': 
+    - 'SQL + Jinja = Templating Done Right™': blog/2020/sql-ninja.markdown
   - '2018':
     - 'Move to MkDocs': blog/2018/move-to-mkdocs.markdown
     - 'A Rustic Journey Through Stream Stats': blog/2018/stream-stats-in-rust.markdown
