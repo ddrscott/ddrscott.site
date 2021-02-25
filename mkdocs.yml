@@ -80,6 +80,8 @@ pages:
     - 'What the SQL?! WINDOW': blog/2017/what-the-sql-window.markdown
     - 'What the SQL?! Recursive': blog/2017/what-the-sql-recursive.markdown
     - 'What the SQL?! JOIN me at UNION Station': blog/2018/join-me-at-union-station.markdown
+  - '2021': 
+    - 'Convert cbr to pdf using Makefile': blog/2021/make-pdf.markdown
   - '2020': 
     - 'SQL + Jinja = Templating Done Right™': blog/2020/sql-ninja.markdown
   - '2018':
