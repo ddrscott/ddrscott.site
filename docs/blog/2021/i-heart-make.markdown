@@ -3,17 +3,17 @@ date: 2021-02-24 08:00 America/Chicago
 comments: true
 categories: Makefile rar pdf
 published: true
-title: Making friends with Makefile
+title: I Heart Make
 image: /images/2021/make-pdf.png
-description: Convert cbr to pdf using Makefile
+description: I heart Make: How  to Convert CBR to PDF using a Makefile
 ---
-# Convert CBR to PDF using Makefile
+# I Heart Make<br/><small>How to Convert CBR to PDF using a Makefile</small>
 
 <img class="featured" src="/images/2021/make-pdf.png" alt="Makefile Header" />
 
-Good news: I got a shiny new e-ink reader.
-Bad news: doesn't support CBR (Comic Book Reader) files.
-Good news: recently read the [manual](https://www.gnu.org/software/make/manual/make.html) on `make` because I had trouble sleeping.
+Good news: I got a shiny new e-ink reader.<br/>
+Bad news: It doesn't support CBR (Comic Book Reader) files.</br>
+Good news: I recently read the [manual](https://www.gnu.org/software/make/manual/make.html) on `make` because I had trouble sleeping.</br>
 Bad news: It didn't put me to sleep.
 
 ## Problem
@@ -45,10 +45,10 @@ Then we'd curse when errors come up because:
 
 ## Solution
 
-Make way for `make`! A `Makefile` can handle most of our problems automatically.
+Make way for `make`! A `Makefile` can handle most of our iteration problems automatically.
 It already has the facilities to handle multiple files, error handling, and skipping finished files.
 
-### Full Snippet
+### A Full `Makefile`
 
 ```make
 cbr_files = $(wildcard *.cbr)
@@ -70,7 +70,7 @@ clean:
 	@echo $@ is ready
 ```
 
-### Full Snippet with In-Line Comments
+### `Makefile` with in-Line Comments
 
 ```make
 # 1. Get a list of all CBR files in the current directory
@@ -134,6 +134,12 @@ clean:
 	# 
 	@echo $@ is ready
 ```
+
+Code the contents of either snippet into a `Makefile` and put the `Makefile` in the same directory as all the `cbr` files.
+Then execute `make` and a pile of `pdf` files should get created.
+If we run with `make -j 4` it will even run multiple files in parallel where `4` is the number of parallel jobs you'd
+like to run. Revel in the code we _didn't_ have to write to enable parallelism!
+
 
 ## A Little Deeper
 
