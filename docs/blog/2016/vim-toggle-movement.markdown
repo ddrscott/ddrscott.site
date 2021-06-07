@@ -43,7 +43,7 @@ In case you don't believe me. Here's what the Vim document says:
 Why can't I have a key that is easy to reach and takes me to the first
 non-blank?!?
 
-<img /src="/venn_home_0.png " alt='venn diagram - home, caret, and 0' />
+<img src="/images/venn_home_0.png " alt='venn diagram - home, caret, and 0' />
 
 I could swap the functionality of `0` and `^`:
 
