@@ -9,10 +9,10 @@ copyright: 'Copyright &copy; 2014 - 2021 Scott Pierce'
 theme:
   name: material
   custom_dir: custom
-  logo:
-    icon: "\uE8AF"
-  feature:
-    tabs: false
+  # logo:
+  #   icon: "\uE8AF"
+  features:
+    # tabs: false
   palette:
     primary: 'blue grey'
     accent: 'orange'
@@ -29,31 +29,44 @@ extra_javascript:
   - 'https://platform.twitter.com/widgets.js'
 
 markdown_extensions:
-  - markdown.extensions.admonition
-  - markdown.extensions.codehilite:
-      guess_lang: false
-  - markdown.extensions.def_list
-  - markdown.extensions.footnotes
-  - markdown.extensions.meta
-  - markdown.extensions.toc:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
       permalink: true
-  - pymdownx.arithmatex
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.keys
-  - pymdownx.magiclink
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
   - pymdownx.mark
   - pymdownx.smartsymbols
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+
 
 google_analytics:
   - 'UA-50126719-1'
@@ -61,7 +74,7 @@ google_analytics:
 
 plugins: ['search']
 
-pages:
+nav:
   - Home: index.md
   - Projects: projects.md
   - Vim: 
@@ -113,4 +126,5 @@ pages:
   - '2014':
     - 'Tech Stack 2014 Edition': blog/2014/tech-stack-2014-edition.markdown
     - 'Octopress to the Rescue': blog/2014/octopress-to-the-rescue.markdown
+  - About: about.md
 # vim:fdm=indent
