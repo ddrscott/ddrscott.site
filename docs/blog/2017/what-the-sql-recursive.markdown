@@ -16,7 +16,7 @@ from the previous results...
 Please note, our target database is PostgreSQL. These examples may work with
 other databases, but might need some massaging to get them to work properly.
 Search online for the specific vendor's documentation if errors pop up.
-Try searching for "RECURSIVE queries {{DB VENDOR NAME}}". Not all database vendors
+Try searching for "RECURSIVE queries $DB_VENDOR_NAME". Not all database vendors
 support the keyword `RECURSIVE`.
 
 ## Fibonacci Sequence

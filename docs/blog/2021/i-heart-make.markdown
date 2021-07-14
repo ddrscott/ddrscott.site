@@ -5,7 +5,7 @@ categories: Makefile rar pdf
 published: true
 title: I Heart Make
 image: /images/2021/make-pdf.png
-description: I heart Make: How  to Convert CBR to PDF using a Makefile
+description: 'I heart Make: How to Convert CBR to PDF using a Makefile'
 ---
 # I Heart Make<br/><small>How to Convert CBR to PDF using a Makefile</small>
 

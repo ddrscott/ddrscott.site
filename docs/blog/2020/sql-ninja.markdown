@@ -208,7 +208,7 @@ SELECT
     ) AS other_amount,
     SUM(amount) AS total_amount
 FROM (
-{% include 'expenses/summary.sql' %}
+{{"{% include 'expenses/summary.sql' %}"}}
 ) AS summary
 ORDER BY year_month, total_amount
 ```
