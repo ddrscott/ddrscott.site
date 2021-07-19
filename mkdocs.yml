@@ -19,11 +19,11 @@ theme:
 
 extra:
   social:
-    - type: 'github'
-      link: 'https://github.com/ddrscott'
-    - type: 'twitter'
-      link: 'https://twitter.com/_ddrscott_'
-  disqus: 'ddrscottgithubio'
+    - icon: fontawesome/brands/github
+      link: https://github.com/ddrscott
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/_ddrscott_
+  disqus: ddrscottgithubio
 
 extra_javascript:
   - 'https://platform.twitter.com/widgets.js'
@@ -72,10 +72,11 @@ google_analytics:
   - 'UA-50126719-1'
   - 'auto'
 
-plugins: ['search']
+plugins: ['search', 'macros', 'custom']
 
 nav:
-  - Home: index.md
+  - Latest Posts: index.md
+  - About: about.md
   - Projects: projects.md
   - Vim: 
     - 'Getting Rusty with Vim': blog/2018/getting-rusty-with-vim.markdown
