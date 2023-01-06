@@ -11,7 +11,7 @@ description: 'How to Generate a Wordy Password'
 
 ## TL;DR
 ```sh
-grep -oP '[a-z]{3,}' /usr/share/dict/words | shuf -n4  | paste -sd- -
+grep -E '^[a-z]{3,}$' /usr/share/dict/words | shuf -n4 | paste -sd- -
 ```
 
 
@@ -42,13 +42,13 @@ got to be a simpler way.
 If your on Mac or Linux, the simpler way is already in your terminal.
 
 ```sh
-grep -oP '[a-z]{3,}' /usr/share/dict/words | shuf -n4 | paste -sd- -
+grep -E '^[a-z]{3,}$' /usr/share/dict/words | shuf -n4 | paste -sd- -
 ```
 
 Let's explain:
 
 - `/usr/share/dict/words` is a file with a list of all English words, about 100k of them.
-- `grep -oP '[a-z]{3,}' /usr/share/dict/words` filters for lowercase words with 3 or more letters.
+- `grep -E '^[a-z]{3,}$' /usr/share/dict/words` filters for lowercase words with 3 or more letters.
 - `shuf -n4` picks 4 random entries from the filtered list. Change `4` to whatever is needed for your use case.
 - `paste -sd- -` joins all the lines with `-` symbol. This can also be changed to `-sd ' '` for spaces or `-sd ','` for commas, etc.
   Note, the last `-` tells the command to read from `/dev/stdin` and is necessary on Mac.
@@ -82,8 +82,8 @@ articles regarding our love for the terminal and why commands like these keep us
 
 ## Alternative Word List
 
-We experimented with other word lists. [doyle.txt](https://www.dataturd.com/words/doyle.txt) contains words from
-Sherlock Holmes. Source code for how the word list was built is [here](https://github.com/ddrscott/wordy-passwords)
+We experimented with other word lists. [doyle.txt](https://www.dataturd.com/words/doyle.txt) contains words extracted from books
+featuring Sherlock Holmes. Source code for how the word list was built is located at https://github.com/ddrscott/wordy-passwords .
 
 Feel free to search the Internet for other word lists.
 
