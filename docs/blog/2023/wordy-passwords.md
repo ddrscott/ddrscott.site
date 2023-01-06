@@ -83,11 +83,11 @@ articles regarding our love for the terminal and why commands like these keep us
 ## Alternative Word List
 
 We experimented with other word lists. [doyle.txt](https://www.dataturd.com/words/doyle.txt) contains words from
-Sherlock Holmes. Source code for how the word list was build is [here](https://github.com/ddrscott/wordy-passwords)
+Sherlock Holmes. Source code for how the word list was built is [here](https://github.com/ddrscott/wordy-passwords)
 
 Feel free to search the Internet for other word lists.
 
 ## Closing
 
 The terminal is a magical place where mountains of code can be replaced with a few razor sharp commands.
-`shuf` and `paste` can make short work many tasks. Let us know what you come up with in the comments below!
+`shuf` and `paste` can make short work of many tasks. Let us know what you come up with in the comments below!
