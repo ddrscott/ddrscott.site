@@ -1,3 +1,5 @@
-site
+site/
 .ipynb_checkpoints
+build/
+*/__pycache__
 *.egg-info
