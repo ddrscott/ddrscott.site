@@ -69,9 +69,9 @@ He would take us bike riding around [Lake Opeka in Des Plaines, IL](https://web.
 
 ## Fiscally Responsible
 
-My Dad loved to save money. He kept the same wardrobe from his 40s and would only replace articles when they were overwarn, never to have more than could fit into small closet. I believe his only real source of new clothing were as gifts.
+My Dad loved to save money. He kept the same wardrobe from his 40s and would only replace articles when they were overwarn, never to have more than what could fit into a small closet. I believe his only real source of new clothing were from gifts.
 
-He would try to fix everything himself and with moderate success. Our Internet was The Readers Digest Fix-It Yourself Manual and Complete Do-It Yourself Manual.
+He would try to fix everything himself and with moderate success. Our Internet was "The Readers Digest Fix-It Yourself Manual" and "Complete Do-It Yourself Manual".
 <img src="/images/2023/dad/readers-digest-fix-it-guide.jpg" alt="The Readers Digest Fix-It Yourself Manual and Complete Do-It Yourself Manual" />
 
 Our Youtube was [This Old House hosted by Bob Vila](https://en.wikipedia.org/wiki/This_Old_House).
