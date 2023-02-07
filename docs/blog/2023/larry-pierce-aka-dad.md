@@ -73,6 +73,7 @@ My Dad loved to save money. He kept the same wardrobe from his 40s and would onl
 
 He would try to fix everything himself and with moderate success. Our Internet was The Readers Digest Fix-It Yourself Manual and Complete Do-It Yourself Manual.
 <img src="/images/2023/dad/readers-digest-fix-it-guide.jpg" alt="The Readers Digest Fix-It Yourself Manual and Complete Do-It Yourself Manual" />
+
 Our Youtube was [This Old House hosted by Bob Vila](https://en.wikipedia.org/wiki/This_Old_House).
 
 ## Hard Worker
@@ -97,11 +98,11 @@ And here's the final picture I have with him and Morgan.
 
 ## Official Obituary
 
-    Lawrence Roy “Larry” Pierce age 76, of Lake in the Hills, Illinois passed away on February 1, 2023, at Northwestern Medicine – Huntley Hospital.
+Lawrence Roy "Larry" Pierce age 76, of Lake in the Hills, Illinois passed away on February 1, 2023, at Northwestern Medicine – Huntley Hospital.
 
-    Larry was a supportive loving father that enjoyed hikes, bike riding and traveling. He lived a simple life and indulged in simple pleasures like books and movies. Although he couldn’t tell a joke, he had a one-of-a-kind laugh.
+Larry was a supportive loving father that enjoyed hikes, bike riding and traveling. He lived a simple life and indulged in simple pleasures like books and movies. Although he couldn't tell a joke, he had a one-of-a-kind laugh.
 
-    He was born in Chicago, Illinois on November 15, 1946, the loving son of Archie Roy and Grace (Thoring) Pierce. Larry is survived by his children, Scott (Karen) Pierce, Mark Pierce, and Julie Pierce; his grandchildren, Nathan, Morgan, Jeremy, and Kaili; his brother, Steve (Nancy) Pierce.
+He was born in Chicago, Illinois on November 15, 1946, the loving son of Archie Roy and Grace (Thoring) Pierce. Larry is survived by his children, Scott (Karen) Pierce, Mark Pierce, and Julie Pierce; his grandchildren, Nathan, Morgan, Jeremy, and Kaili; his brother, Steve (Nancy) Pierce.
 
 ## Endless Story
 
@@ -109,5 +110,5 @@ This is only one side of my Dad's story and from one narrow perspective.
 I'm planning on having a more historical/objective write up soon.
 But in the meantime, please feel free to comment if Larry has impacted your life in anyway.
 
-Cheers to the best Dad I've ever had!
+Cheers to the best Dad I ever had!
 <img src="/images/2023/dad/larry-2006.jpg" alt="Dad at Grand Canyon National Park" />
