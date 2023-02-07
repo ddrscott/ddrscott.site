@@ -5,7 +5,7 @@ categories: life
 published: true
 title: Larry Pierce, aka Dad
 image: /images/2023/dad/larry-headshot-800x.jpg
-description: 'Lawrence Roy "Larry" Pierce age 76, of Lake in the Hills, Illinois passed away on February 1, 2023, at Northwestern Medicine - Huntley Hospital.'
+description: 'Lawrence Roy Pierce age 76, of Lake in the Hills, Illinois passed away on February 1, 2023, at Northwestern Medicine - Huntley Hospital.'
 ---
 # Larry Pierce, aka Dad
 
