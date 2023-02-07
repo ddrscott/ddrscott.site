@@ -5,7 +5,7 @@ categories: life
 published: true
 title: Larry Pierce, aka Dad
 image: /images/2023/dad/larry-headshot-800x.jpg
-description: 'Lawrence Roy “Larry” Pierce age 76, of Lake in the Hills, Illinois passed away on February 1, 2023, at Northwestern Medicine - Huntley Hospital.'
+description: 'Lawrence Roy "Larry" Pierce age 76, of Lake in the Hills, Illinois passed away on February 1, 2023, at Northwestern Medicine - Huntley Hospital.'
 ---
 # Larry Pierce, aka Dad
 
@@ -63,7 +63,7 @@ All my jokes would go over his head. Sometimes he would look up to catch them.
 We can't choose our parents, but my Dad chose me. I was 4 years old at the time, and after logistics, I finally came over at 5. He chose my sister, too.
 
 Here we are around 1985.
-<img src="../../images/2023/dad/larry-1985.jpg" alt="Early Pierce Family" />
+<img src="/images/2023/dad/larry-1985.jpg" alt="Early Pierce Family" />
 
 He would take us bike riding around [Lake Opeka in Des Plaines, IL](https://web.archive.org/web/20230205141050/https://www.dpparks.org/parks-facilities/lake-park/). We would feed the ducks with stale bread. He'd encourage us to be outside by being outside with us.
 
@@ -72,7 +72,7 @@ He would take us bike riding around [Lake Opeka in Des Plaines, IL](https://web.
 My Dad loved to save money. He kept the same wardrobe from his 40s and would only replace articles when they were overwarn, never to have more than could fit into small closet. I believe his only real source of new clothing were as gifts.
 
 He would try to fix everything himself and with moderate success. Our Internet was The Readers Digest Fix-It Yourself Manual and Complete Do-It Yourself Manual.
-<img src="../../images/2023/dad/readers-digest-fix-it-guide.jpg" alt="The Readers Digest Fix-It Yourself Manual and Complete Do-It Yourself Manual" />
+<img src="/images/2023/dad/readers-digest-fix-it-guide.jpg" alt="The Readers Digest Fix-It Yourself Manual and Complete Do-It Yourself Manual" />
 Our Youtube was [This Old House hosted by Bob Vila](https://en.wikipedia.org/wiki/This_Old_House).
 
 ## Hard Worker
@@ -84,10 +84,10 @@ My Dad was a hard worker. He got early and came home late. He went back to schoo
 In his retirement, he preferred to stay around town, visit grand kids, make sandwiches, and catch up on TV shows, movies, and the news. A simple man with simple pleasure.
 
 Here we are 30+ years later in Harvard, IL:
-<img src="../../images/2023/dad/larry-2019.jpg" alt="Grandpa Larry in Harvard, IL" />
+<img src="/images/2023/dad/larry-2019.jpg" alt="Grandpa Larry in Harvard, IL" />
 
 And here's the final picture I have with him and Morgan.
-<img src="../../images/2023/dad/larry-and-morgan-2022.jpg" alt="Larry and Morgan" />
+<img src="/images/2023/dad/larry-and-morgan-2022.jpg" alt="Larry and Morgan" />
 
 ## Timeline
 
@@ -110,4 +110,4 @@ I'm planning on having a more historical/objective write up soon.
 But in the meantime, please feel free to comment if Larry has impacted your life in anyway.
 
 Cheers to the best Dad I've ever had!
-<img src="../../images/2023/dad/larry-2006.jpg" alt="Dad at Grand Canyon National Park" />
+<img src="/images/2023/dad/larry-2006.jpg" alt="Dad at Grand Canyon National Park" />
