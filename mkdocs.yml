@@ -94,7 +94,8 @@ nav:
     - 'What the SQL?! WINDOW': blog/2017/what-the-sql-window.markdown
     - 'What the SQL?! Recursive': blog/2017/what-the-sql-recursive.markdown
     - 'What the SQL?! JOIN me at UNION Station': blog/2018/join-me-at-union-station.markdown
-  - '2023': 
+  - '2023':
+    - 'Larry Pierce, aka Dad': blog/2023/larry-pierce-aka-dad.md
     - 'Wordy Passwords': blog/2023/wordy-passwords.md
   - '2021': 
     - 'I Heart Make': blog/2021/i-heart-make.markdown
