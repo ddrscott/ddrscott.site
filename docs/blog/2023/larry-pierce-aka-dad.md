@@ -67,7 +67,7 @@ Here we are around 1985.
 
 He would take us bike riding around [Lake Opeka in Des Plaines, IL](https://web.archive.org/web/20230205141050/https://www.dpparks.org/parks-facilities/lake-park/). We would feed the ducks with stale bread. He'd encourage us to be outside by being outside with us.
 
-# Fiscally Responsible
+## Fiscally Responsible
 
 My Dad loved to save money. He kept the same wardrobe from his 40s and would only replace articles when they were overwarn, never to have more than could fit into small closet. I believe his only real source of new clothing were as gifts.
 
@@ -104,11 +104,11 @@ Larry was a supportive loving father that enjoyed hikes, bike riding and traveli
 
 He was born in Chicago, Illinois on November 15, 1946, the loving son of Archie Roy and Grace (Thoring) Pierce. Larry is survived by his children, Scott (Karen) Pierce, Mark Pierce, and Julie Pierce; his grandchildren, Nathan, Morgan, Jeremy, and Kaili; his brother, Steve (Nancy) Pierce.
 
-## Endless Story
+## Not The End
 
 This is only one side of my Dad's story and from one narrow perspective.
 I'm planning on having a more historical/objective write up soon.
-But in the meantime, please feel free to comment if Larry has impacted your life in anyway.
+But in the meantime, please comment if Larry has impacted your life in anyway.
 
 Cheers to the best Dad I ever had!
 <img src="/images/2023/dad/larry-2006.jpg" alt="Dad at Grand Canyon National Park" />
