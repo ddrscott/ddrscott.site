@@ -5,14 +5,14 @@ categories: life
 published: true
 title: How to Make a Website from scratch in 7:59 seconds with Github
 image: /images/2023/github/github-featured-800x.png
-description: 'Wordpress? Squarespace? Wix? Not today. Those are great products for hosting articles and marketing, but you want to make an application. You want to make something the old-fashioned way. You want to know what's under the hood, and you want to make it easy for others to help you along the way.'
+description: "Wordpress? Squarespace? Wix? Not today. Those are great products for hosting articles and marketing, but you want to make an application. You want to make something the old-fashioned way. You want to know what's under the hood, and you want to make it easy for others to help you along the way."
 ---
 
 # How to Make a Website from scratch in 7:59 seconds with Github
 
 Wordpress? Squarespace? Wix? Not today. Those are great products for hosting articles and marketing, but you want to make an application. You want to make something the old-fashioned way. You want to know what's under the hood, and you want to make it easy for others to help you along the way.
 
-<img src="/images/2023/github/github-featured-800x.png" alt="Featured Banner" />
+<img class="featured" src="/images/2023/github/github-featured-800x.png" alt="Featured Banner" />
 
 **TL;DR** - The goal is to ~understand how~ make a website. Enter Github and Codespaces!
 
