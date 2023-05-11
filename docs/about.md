@@ -29,7 +29,7 @@ Ruby. It's not the fastest, but the most succinct for my uses. This may change d
 
 ### What projects have you worked on?
 
-See [projects](projects/).
+See [projects](/projects).
 
 ### What about my question?
 
