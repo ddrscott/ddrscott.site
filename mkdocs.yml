@@ -68,9 +68,9 @@ markdown_extensions:
   - pymdownx.tilde
 
 
-google_analytics:
-  - 'UA-50126719-1'
-  - 'auto'
+# google_analytics:
+#   - 'UA-50126719-1'
+#   - 'auto'
 
 plugins: ['search', 'macros', 'custom']
 

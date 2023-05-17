@@ -25,8 +25,16 @@
     (function(w, d, s, u) {
         w.RocketChat = function(c) { w.RocketChat._.push(c) }; w.RocketChat._ = []; w.RocketChat.url = u;
         var h = d.getElementsByTagName(s)[0], j = d.createElement(s);
-        j.async = true; j.src = 'https://chat.y.chickencow.org/livechat/rocketchat-livechat.min.js?_=201903270000';
+        j.async = true; j.src = 'https://chat.chickencow.org/livechat/rocketchat-livechat.min.js?_=201903270000';
         h.parentNode.insertBefore(j, h);
-    })(window, document, 'script', 'https://chat.y.chickencow.org/livechat');
+    })(window, document, 'script', 'https://chat.chickencow.org/livechat');
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9C68DD62WS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-9C68DD62WS');
     </script>
 {% endblock %}
