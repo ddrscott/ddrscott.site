@@ -39,7 +39,7 @@ got to be a simpler way.
 
 ## Simpler Way
 
-If your on Mac or Linux, the simpler way is already in your terminal.
+If you're on Mac or Linux, the simpler way is already in your terminal.
 
 ```sh
 grep -E '^[a-z]{3,}$' /usr/share/dict/words | shuf -n4 | paste -sd- -
