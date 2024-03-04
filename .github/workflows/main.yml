@@ -25,16 +25,12 @@ jobs:
 
     - name: Build Docker Image
       run: |
-        cd source-project # Assuming the Dockerfile is in the source project directory
-        pwd
-        find .
-        docker build . -t ddrscottsite_app
+        cd source-project
+        docker build . -t mkdocs
 
     - name: Build and Deploy
       run: |
         cd source-project
-        pwd
-        find .
-        make deploy
+        docker run -t --rm  -v ${PWD}:/app -v ${site_path}:/site mkdocs build --site-dir /site
       env:
         site_path: ${{ github.workspace }}/ddrscott.github.io
