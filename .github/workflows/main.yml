@@ -11,21 +11,26 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        path: source-project # Optional: Specify a path to clone the source project into
+        path: source-project
 
     - name: Clone ddrscott.github.io
       uses: actions/checkout@v2
       with:
         repository: ddrscott/ddrscott.github.io
-        path: ddrscott.github.io # Clone into 'ddrscott.github.io' directory
-        token: ${{ secrets.GITHUB_TOKEN }} # Use GITHUB_TOKEN or your personal token if needed
+        path: ddrscott.github.io
+        token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Set up Docker
       uses: docker/setup-buildx-action@v1
 
+    - name: Build Docker Image
+      run: |
+        cd source-project # Assuming the Dockerfile is in the source project directory
+        docker build . -t ddrscottsite_app
+
     - name: Build and Deploy
       run: |
-        cd source-project # Navigate into the source project directory if you used a path above
+        cd source-project
         make deploy
       env:
         site_path: ${{ github.workspace }}/ddrscott.github.io
