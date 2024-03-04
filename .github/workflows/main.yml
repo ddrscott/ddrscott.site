@@ -31,7 +31,6 @@ jobs:
     - name: Build and Deploy
       run: |
         cd source-project
-        echo docker run --rm  -v ${PWD}:/app -v ${site_path}:/site mkdocs
-        docker run --rm  -v ${PWD}:/app -v ${site_path}:/site mkdocs
+        make deploy
       env:
         site_path: ${{ github.workspace }}/ddrscott.github.io

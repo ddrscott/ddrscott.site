@@ -4,7 +4,7 @@ commit_msg =$(shell git log --pretty=oneline --abbrev-commit -1 | head -1)
 .PHONY: build
 
 build:
-	docker run -t --rm  -v ${PWD}:/app -v ${site_path}:/site ddrscottsite_app build --site-dir /site
+	docker run -t --rm  -v ${PWD}:/app -v ${site_path}:/site mkdocs
 
 env:
 	@echo ${site_path}
