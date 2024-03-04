@@ -1,4 +1,4 @@
-site_path ?= $(abspath ./ddrscott.github.io)
+site_path ?= $(abspath ../ddrscott.github.io)
 commit_msg =$(shell git log --pretty=oneline --abbrev-commit -1 | head -1)
 
 .PHONY: build
