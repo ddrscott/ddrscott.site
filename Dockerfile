@@ -12,4 +12,4 @@ COPY . /app
 
 RUN pip install -e .
 
-ENTRYPOINT ["mkdocs"]
+CMD ["./build.sh"]
