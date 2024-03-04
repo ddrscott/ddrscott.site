@@ -15,3 +15,6 @@ deploy: build  ## deploy to ddrscott.github.io
 	  git add . && \
 	  git commit -m "${commit_msg}" && \
 	  git push
+
+requirements.txt: requirements.in
+	pip-compile $< -o $@

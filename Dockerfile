@@ -2,15 +2,13 @@ FROM python:3.9-slim
 
 WORKDIR /app
 
+ENV PYTHONPATH "/app"
+
 # Install dependencies
-RUN pip install pipenv
-COPY Pipfile /app
-COPY Pipfile.lock /app
-RUN pipenv install --system
+COPY requirements.txt /app
+RUN pip install -r requirements.txt
 
 COPY . /app
-
-ENV PYTHONPATH "/app"
 
 RUN pip install -e .
 
