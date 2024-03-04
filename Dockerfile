@@ -1,7 +1,8 @@
 FROM python:3.9-slim
 
-
 WORKDIR /app
+
+ENV PYTHONPATH "${PYTHONPATH}:/app"
 
 # Install dependencies
 RUN pip install pipenv
