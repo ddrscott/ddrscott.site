@@ -94,6 +94,9 @@ nav:
     - 'What the SQL?! WINDOW': blog/2017/what-the-sql-window.markdown
     - 'What the SQL?! Recursive': blog/2017/what-the-sql-recursive.markdown
     - 'What the SQL?! JOIN me at UNION Station': blog/2018/join-me-at-union-station.markdown
+  - '2024':
+    - 'Taking Humour Seriously': blog/2024/taking-humor-seriously.md
+    - 'Recovering 10x Developer': blog/2024/recovering-10x-developer.md
   - '2023':
     - 'How to Make a Website from Scratch via Github': blog/2023/how-to-make-a-website-via-github.md
     - 'Larry Pierce, aka Dad': blog/2023/larry-pierce-aka-dad.md
