@@ -33,7 +33,7 @@ But this joke didn't take 19 seconds to create. It took a lifetime:
    3. Learn Vim
    4. Watch movies
    5. Learn AI
-   6. Keep up with AI news, trigging a funny idea
+   6. Keep up with AI news, triggering a funny idea
    7. Find Bruce Almighty clip
    8. Create video by recalling everything I've learned up until this point
    9. Write article to share my experience
