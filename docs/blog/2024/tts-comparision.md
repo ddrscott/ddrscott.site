@@ -4,19 +4,20 @@ comments: true
 categories: life
 published: true
 title: Karaoke
-image: /images/2024/karaoke-02.png
+image: /images/2024/tts-robots.jpg
 description: |
-  Hear what it's like to campaign for your Site Reliability position
+  What it's like when robots campaign for your Site Reliability position
 ---
-# Hear what it's like to campaign for a Site Reliability position
+# Robots Campaigning for a Site Reliability position
+
+<img class="featured" src="/images/2024/tts-robots.jpg" alt="Featured Banner" />
 
 I've been doing a lot of comparisons between Text to Speech (TTS) engines recently and run into a this post
 from [Julien Bicknell](https://www.linkedin.com/in/juliensydney) who had ChatGPT "write a job ad in the style of Donald
-Trump"
+Trump". I couldn't resist passing the generated script through to the Text to Speech engines in front of me.
 
-They all feel robotic to me, but Open AI feels the most natural at the moment. I'm sure I could use Speech Synthesis
-Markup Language (SSML) tags to improve it a bit from Vertex AI, but that would require me to add those tags to voice
-script or prompt ChatGPT to generate it with SSML tags.
+**WARNING**: This is NOT a comprehensive analysis.
+I'm simply posting these recordings so I don't forget about them, and can listen to them in the future for a laugh. If someone wants a thorough analysis make me an offer. In the meantime, enjoy the robots trying to get an SRE job.
 
 ## Audio Outputs from Various Vendors
 
@@ -65,12 +66,32 @@ script or prompt ChatGPT to generate it with SSML tags.
     </audio>
     </td>
 </tr>
+<tr>
+    <td>
+    <a href="https://copilot.microsoft.com/" target="_blank"><b>Microsoft Copilot</b></a>
+    </td>
+    <td>
+    <audio controls>
+    <source src="https://cdn.dataturd.com/audio/tts-compare/ms-copilot-trimmed.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+    </audio>
+    </td>
+</tr>
 
 </table>
 
-## Script
+## Conclusion
+
+They all feel robotic to me, but Open AI feels the most natural at the moment. I'm sure I could use Speech Synthesis
+Markup Language (SSML) tags to improve it a bit from Vertex AI, but that would require me to add those tags to voice
+script or prompt ChatGPT to generate it with SSML tags.
+
+
+## Original Script
 
 [LinkedIn Post](https://www.linkedin.com/posts/juliensydney_makeadvertsgreatagain-activity-7243775950448947200-xzYH)
+
+<img class="featured" src="/images/2024/tts-trump.png" alt="Featured Banner" />
 
 > Listen, folks, I’ve talked to many, many people, and they all agree – we need the BEST Site Reliability Engineers. 
 > 
