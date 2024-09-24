@@ -95,6 +95,7 @@ nav:
     - 'What the SQL?! Recursive': blog/2017/what-the-sql-recursive.markdown
     - 'What the SQL?! JOIN me at UNION Station': blog/2018/join-me-at-union-station.markdown
   - '2024':
+    - 'TTS Comparision': blog/2024/tts-comparision.md
     - 'Karaoke Podcast': blog/2024/karaoke-podcast.md
     - 'Karaoke': blog/2024/karaoke.md
     - 'Taking Humour Seriously': blog/2024/taking-humor-seriously.md
