@@ -4,7 +4,7 @@ comments: true
 categories: life
 published: true
 title: Column with a G
-image: /images/2024/golumn-screen.jpg
+image: /images/2024/golumn-demo.png
 description: |
   How to view large CSV files.
 ---
