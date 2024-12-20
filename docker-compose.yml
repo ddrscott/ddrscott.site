@@ -4,9 +4,13 @@ services:
     build: .
     ports:
       - 8000:8000
-    volumes:
-    - .:/app
     command:
-    - mkdocs --help
-    - '-a'
-    - '0.0.0.0:8000'
+      - mkdocs
+      - serve
+      - '-a'
+      - '0.0.0.0:8000'
+    develop:
+      watch:
+        - action: sync
+          path: .
+          target: /app

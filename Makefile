@@ -14,6 +14,9 @@ env:
 	@echo ${site_path}
 	@echo ${commit_msg}
 
+image:
+	docker build -t mkdocs .
+
 deploy: build  ## deploy to ddrscott.github.io 
 	cd ${site_path} && \
 	  git add . && \

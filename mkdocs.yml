@@ -96,6 +96,7 @@ nav:
     - 'What the SQL?! Recursive': blog/2017/what-the-sql-recursive.markdown
     - 'What the SQL?! JOIN me at UNION Station': blog/2018/join-me-at-union-station.markdown
   - '2024':
+    - 'Column with a G': blog/2024/column-with-a-g.md
     - 'Bowling Scores the SQL Way': blog/2024/sql-bowling.md
     - 'TTS Comparision': blog/2024/tts-comparision.md
     - 'Karaoke Podcast': blog/2024/karaoke-podcast.md

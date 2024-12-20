@@ -2,14 +2,13 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-ENV PYTHONPATH "/app"
+ENV PYTHONPATH="/app"
 
 # Install dependencies
+RUN pip install uv
 COPY requirements.txt /app
-RUN pip install -r requirements.txt
-
+RUN uv pip install --system -r requirements.txt
 COPY . /app
-
-RUN pip install -e .
+RUN uv pip install --system -e .
 
 CMD ["./build.sh"]
