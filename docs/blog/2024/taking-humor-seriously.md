@@ -11,7 +11,7 @@ description: |
 # Taking Humor Seriously
 
 <figure>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0mDpCU2SafI?si=iKs2tpfnFOGtnZyv&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/urx7F3OFCew?si=StA4ir6EQnU6ZKW6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <figcaption>I can finally understand what people see when they watch me develop!</figcaption>
 </figure>
 
