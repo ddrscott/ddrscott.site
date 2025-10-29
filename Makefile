@@ -5,7 +5,7 @@ commit_msg =$(shell git log --pretty=oneline --abbrev-commit -1 | head -1)
 
 serve:
 	docker run -t --rm  -v ${PWD}:/app -v ${site_path}:/site --entrypoint mkdocs \
-		-p 8000:8000 mkdocs serve -a '0.0.0.0:8000'
+		-p 8001:8000 mkdocs serve -a '0.0.0.0:8000'
 
 build:
 	docker run -t --rm  -v ${PWD}:/app -v ${site_path}:/site mkdocs
