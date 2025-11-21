@@ -4,7 +4,7 @@ repo_name: null
 repo_url: null # https://github.com/ddrscott/ddrscott.github.io
 # git@github.com:ddrscott/ddrscott.github.io.git
 # Copyright
-copyright: 'Copyright &copy; 2014 - 2024 Scott Pierce'
+copyright: 'Copyright &copy; 2014 - 2025 Scott Pierce'
 
 theme:
   name: material
@@ -97,6 +97,7 @@ nav:
     - 'What the SQL?! Recursive': blog/2017/what-the-sql-recursive.markdown
     - 'What the SQL?! JOIN me at UNION Station': blog/2018/join-me-at-union-station.markdown
   - '2025':
+    - 'RingLite: A Virtual Ring Light That Doesn''t Exist': blog/2025/ringlite-virtual-ring-light.md
     - 'tmate is Dead, Long Live tmate': blog/2025/tmate-is-dead-long-live-tmate.md
     - 'Double Quotes in Novels and Code': blog/2025/what-is-a-string.md
     - 'How to say the impossible: Voice Cloning': blog/2025/chatterbox-tts-voice-cloning.md
