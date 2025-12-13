@@ -88,7 +88,8 @@ nav:
     - 'Making a Window Submode in Vim': blog/2016/making-a-window-submode.markdown
     - 'BS to the Black Hole': blog/2016/bs-to-the-black-hole.markdown
     - 'PSA: Vim Modulo ''%'' Returns Negative Numbers!': blog/2016/negative-modulo.markdown
-  - SQL: 
+  - SQL:
+    - 'Go SQL Injection: A Tale of Two Queries': blog/2025/go-sql-injection-the-wrong-way.md
     - 'Why are LLMs bad at SQL?': blog/2025/why-are-llms-bad-at-sql.md
     - 'Bowling Scores the SQL Way': blog/2024/sql-bowling.md
     - 'SQL + Jinja = Templating Done Right™': blog/2020/sql-ninja.markdown
@@ -97,6 +98,7 @@ nav:
     - 'What the SQL?! Recursive': blog/2017/what-the-sql-recursive.markdown
     - 'What the SQL?! JOIN me at UNION Station': blog/2018/join-me-at-union-station.markdown
   - '2025':
+    - 'Go SQL Injection: A Tale of Two Queries': blog/2025/go-sql-injection-the-wrong-way.md
     - 'The Greatness of Nano Banana 2': blog/2025/nano-banana-2.md
     - 'RingLite: A Virtual Ring Light That Doesn''t Exist': blog/2025/ringlite-virtual-ring-light.md
     - 'tmate is Dead, Long Live tmate': blog/2025/tmate-is-dead-long-live-tmate.md
