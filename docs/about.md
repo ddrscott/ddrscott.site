@@ -34,3 +34,9 @@ See [projects](/projects).
 ### What about my question?
 
 Do you have a question for Scott? Ask in the comments and he'll post an answer here or as a separate post.
+
+## Sponsor Scott
+
+Currently working on convincing his mom he has 10 friends.
+
+<iframe src="https://github.com/sponsors/ddrscott/button" title="Sponsor ddrscott" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>

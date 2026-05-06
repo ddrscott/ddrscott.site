@@ -98,6 +98,7 @@ nav:
     - 'What the SQL?! Recursive': blog/2017/what-the-sql-recursive.markdown
     - 'What the SQL?! JOIN me at UNION Station': blog/2018/join-me-at-union-station.markdown
   - '2026':
+    - 'Postgres via Cloudflare Tunnel': blog/2026/postgres-via-cloudflare-tunnel.md
     - 'Live Code Highlighting: A Technical Deep Dive': blog/2026/strudel-live-code-highlighting.md
     - 'How to Avoid Shark Bites: A Data-Driven Approach': blog/2026/shark-bite-prevention.md
     - 'Browser Agent: Claude Code Plugin for Playwright': blog/2026/browser-agent-plugin.md
