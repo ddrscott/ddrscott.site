@@ -21,6 +21,24 @@ function normalizeTags(input: unknown): string[] {
   return [...out].sort();
 }
 
+// Strip the leading H1 and any leading featured-image <img> from the body.
+// The MkDocs Material era hoisted the markdown H1 into the page title; our
+// Astro layout renders title (from frontmatter) and the featured image
+// independently, so the source-file convention of repeating them at the top
+// of the body now produces duplicates. Removing them at load time keeps the
+// source files compatible with any other markdown viewer (the H1 + img stay
+// useful as standalone content) while cleaning up the rendered article.
+function stripDuplicateHeader(body: string, imageSrc: unknown): string {
+  let out = body.replace(/^\s*#\s+[^\n]+\n+/, '');
+  if (typeof imageSrc === 'string' && imageSrc.length > 0) {
+    const match = out.match(/^\s*<img\b[^>]*\bsrc=["']([^"']+)["'][^>]*\/?>\s*\n*/i);
+    if (match && match[1].trim() === imageSrc) {
+      out = out.slice(match[0].length);
+    }
+  }
+  return out;
+}
+
 export function lifeContentLoader(opts: LifeContentLoaderOptions): Loader {
   return {
     name: 'life-content',
@@ -99,9 +117,11 @@ export function lifeContentLoader(opts: LifeContentLoaderOptions): Loader {
             },
           });
 
+          const cleanedBody = stripDuplicateHeader(parsed.content, fm.image);
+
           let rendered;
           try {
-            rendered = await renderMarkdown(parsed.content);
+            rendered = await renderMarkdown(cleanedBody);
           } catch (err) {
             logger.warn(`Skipping ${filePath} (markdown render error): ${(err as Error).message}`);
             skipped += 1;
@@ -111,7 +131,7 @@ export function lifeContentLoader(opts: LifeContentLoaderOptions): Loader {
           store.set({
             id,
             data,
-            body: parsed.content,
+            body: cleanedBody,
             rendered,
             digest: generateDigest(raw),
           });

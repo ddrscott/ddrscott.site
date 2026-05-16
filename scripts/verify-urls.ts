@@ -17,8 +17,11 @@ import { XMLParser } from 'fast-xml-parser';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const projectRoot = dirname(__dirname);
 const distDir = join(projectRoot, 'dist');
+// Use the frozen pre-migration sitemap as the baseline so verify-urls
+// always compares against the URL set ddrscott.github.io committed to
+// when we cut over from MkDocs, not whatever last deploy happened to ship.
 const oldSitemapPath =
-  process.env.OLD_SITEMAP ?? join(projectRoot, '..', 'ddrscott.github.io', 'sitemap.xml');
+  process.env.OLD_SITEMAP ?? join(__dirname, 'baseline-sitemap.xml');
 
 interface SitemapDoc {
   urlset?: { url?: Array<{ loc?: string }> | { loc?: string } };
