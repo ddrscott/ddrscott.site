@@ -28,10 +28,12 @@ verify: build
 	pnpm verify-urls
 
 deploy: verify
-	@echo "Deploying to ${site_path}"
-	@rm -rf ${site_path}/blog ${site_path}/about ${site_path}/projects ${site_path}/archive ${site_path}/tags ${site_path}/images
+	@echo "Deploying dist/ → ${site_path}"
+	@# GitHub Pages runs Jekyll by default; Jekyll skips dirs starting with
+	@# `_` (Astro emits assets under _astro/). .nojekyll opts the site out.
+	@touch dist/.nojekyll
 	rsync -av --delete \
-		--exclude='.git' \
+		--exclude='.git/' \
 		--exclude='.gitignore' \
 		--exclude='.gitattributes' \
 		--exclude='.gitmodules' \
@@ -39,10 +41,19 @@ deploy: verify
 		--exclude='.powrc' \
 		--exclude='.slugignore' \
 		dist/ ${site_path}/
-	cd ${site_path} && \
-		git add . && \
-		git commit -m "Migrate to Astro: $$(date -u +%Y-%m-%dT%H:%M:%SZ)" && \
-		echo "Run 'cd ${site_path} && git push' when ready"
+	@src_sha=$$(git -C ${CURDIR} rev-parse --short HEAD) ; \
+	 cd ${site_path} && \
+		git add -A && \
+		if git diff --cached --quiet ; then \
+			echo "" ; echo "No changes to deploy — site already up to date." ; \
+		else \
+			git commit -m "Deploy from ddrscott.site@$$src_sha ($$(date -u +%Y-%m-%dT%H:%M:%SZ))" ; \
+			echo "" ; echo "Deploy commit created in ${site_path}." ; \
+			echo "Run 'cd ${site_path} && git push' (or 'make publish' below) to ship." ; \
+		fi
+
+publish: deploy
+	cd ${site_path} && git push --follow-tags
 
 clean:
 	rm -rf dist/ .astro/ public/images/ public/pagefind/
