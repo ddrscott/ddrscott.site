@@ -1,0 +1,87 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  pageType?: 'website' | 'article';
+  canonical?: string;
+  bodyClass?: string;
+  wide?: boolean;
+}
+
+const {
+  title,
+  description,
+  image,
+  pageType = 'website',
+  canonical,
+  bodyClass,
+  wide = false,
+} = Astro.props;
+
+const siteName = 'Why, Scott, WHY?!?';
+const fullTitle = title === siteName ? title : `${title} — ${siteName}`;
+const canonicalUrl = canonical ?? new URL(Astro.url.pathname, Astro.site).toString();
+const ogImage = image ? new URL(image, Astro.site).toString() : undefined;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{fullTitle}</title>
+  {description && <meta name="description" content={description} />}
+  <link rel="canonical" href={canonicalUrl} />
+  <link rel="alternate" type="application/rss+xml" title={siteName} href="/rss.xml" />
+
+  <meta property="og:type" content={pageType} />
+  <meta property="og:title" content={title} />
+  <meta property="og:url" content={canonicalUrl} />
+  <meta property="og:site_name" content={siteName} />
+  {description && <meta property="og:description" content={description} />}
+  {ogImage && <meta property="og:image" content={ogImage} />}
+
+  <meta name="twitter:card" content={ogImage ? 'summary_large_image' : 'summary'} />
+  <meta name="twitter:creator" content="@_ddrscott_" />
+  <meta name="twitter:site" content="@_ddrscott_" />
+  {ogImage && <meta name="twitter:image" content={ogImage} />}
+
+  <link rel="icon" type="image/png" href="/favicon.png" />
+
+  <script is:inline defer data-domain="ddrscott.github.io" src="https://plausible.dataturd.com/js/script.outbound-links.js"></script>
+
+  <slot name="head" />
+</head>
+<body class={bodyClass}>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="/" class="site-header__brand">Why, Scott, WHY?!?</a>
+      <nav class="site-nav">
+        <a href="/">Latest</a>
+        <a href="/tags/vim/">Vim</a>
+        <a href="/tags/sql/">SQL</a>
+        <a href="/tags/ai/">AI</a>
+        <a href="/archive/">Archive</a>
+        <a href="/about/">About</a>
+        <a href="/search/" aria-label="Search">⌕</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class={wide ? 'wide' : ''}>
+    <slot />
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__links">
+      <a href="https://github.com/ddrscott">GitHub</a>
+      <a href="https://twitter.com/_ddrscott_">Twitter</a>
+      <a href="/rss.xml">RSS</a>
+      <a href="/llms.txt">llms.txt</a>
+    </div>
+    <div>© 2014–{new Date().getFullYear()} Scott Pierce</div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,72 @@
+---
+import Base from '../layouts/Base.astro';
+
+const description = `"Why, Scott, WHY?!?" is a collection of posts and projects which catalog the developer's history in the field.`;
+---
+<Base
+  title="About"
+  description={description}
+>
+  <h1>Why, Scott, Why?!</h1>
+
+  <p>
+    "Why, Scott, WHY?!" is a collection of posts and projects which catalog the developer's history in the field.
+    The site's name reflects a common sentiment when working with him due to his proclivity for making tools for problems no one thinks they have.
+    Need to solve <a href="https://github.com/wheeler">Wheel of Fortune</a> puzzles from the command line? Neither has anyone else.
+  </p>
+
+  <h2>Who is Scott?</h2>
+
+  <ul>
+    <li>
+      Scott makes software. His most interesting projects are tools spoken in passing,
+      born of statements like, "Wouldn't it be great if AWESOME_THING existed?"
+    </li>
+    <li>
+      Scott makes posts. A teacher at heart who loves sharing tips and tricks to anyone who will listen.
+      May these articles live on longer than him so future readers can appreciate how easy they have it now.
+      Writing code in a terminal using Vim? What's that?!
+    </li>
+    <li>
+      Scott makes jokes. His sense of humor is an acquired taste full of puns and absurdities.
+      Trial and error is used extensively throughout the process. One of them has <em>got</em> to be funny.
+    </li>
+  </ul>
+
+  <h2>Q &amp; A</h2>
+
+  <h3>Should SQL be taught in the classroom?</h3>
+  <p>
+    Yes. A language that describes data should be everyone's second language.
+    It's supported by more business tools than <a href="https://wikipedia.org/wiki/JavaScript">JavaScript</a> and is easier to learn.
+  </p>
+
+  <h3>How to exit Vim?</h3>
+  <p>Type literally: <code>:qa!</code> then press <kbd>enter</kbd></p>
+
+  <h3>What's your favorite language?</h3>
+  <p>
+    Ruby. It's not the fastest, but the most succinct for my uses.
+    This may change depending on the project. Some tasks need speed, some may already be mostly implemented in another language's ecosystem,
+    and sometimes Ruby is a bad team fit if everyone isn't comfortable with it.
+    If I'm on a desert, I'll write Ruby in the sand. <code>10.times {'{'} p "HELP" {'}'}</code>
+  </p>
+
+  <h3>What projects have you worked on?</h3>
+  <p>See <a href="/projects/">projects</a>.</p>
+
+  <h3>What about my question?</h3>
+  <p>Do you have a question for Scott? Ask in the comments and he'll post an answer here or as a separate post.</p>
+
+  <h2>Sponsor Scott</h2>
+  <p>Currently working on convincing his mom he has 10 friends.</p>
+  <p>
+    <iframe
+      src="https://github.com/sponsors/ddrscott/button"
+      title="Sponsor ddrscott"
+      height="32"
+      width="114"
+      style="border: 0; border-radius: 6px;"
+    ></iframe>
+  </p>
+</Base>

@@ -1,0 +1,58 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base
+  title="Search"
+  description="Search posts on Why, Scott, WHY?!? — full-text via Pagefind."
+>
+  <h1>Search</h1>
+  <p class="text-muted">Full-text search across every post. Type a few characters and matches appear.</p>
+
+  <div id="search" class="pagefind-mount"></div>
+
+  <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+  <script is:inline src="/pagefind/pagefind-ui.js"></script>
+  <script is:inline>
+    window.addEventListener('DOMContentLoaded', () => {
+      if (typeof window.PagefindUI === 'undefined') {
+        document.getElementById('search').innerHTML =
+          '<p class="text-faint">Search index not built yet. Run <code>make build</code> to generate <code>/pagefind/</code> output.</p>';
+        return;
+      }
+      new window.PagefindUI({
+        element: '#search',
+        showSubResults: true,
+        showImages: true,
+        excerptLength: 28,
+        resetStyles: false,
+      });
+    });
+  </script>
+
+  <style>
+    .pagefind-mount {
+      margin-top: var(--space-lg);
+    }
+    .pagefind-ui {
+      --pagefind-ui-primary: var(--color-primary);
+      --pagefind-ui-text: var(--color-text);
+      --pagefind-ui-background: var(--color-bg);
+      --pagefind-ui-border: var(--color-border);
+      --pagefind-ui-tag: var(--color-surface);
+      --pagefind-ui-border-width: 1px;
+      --pagefind-ui-border-radius: 4px;
+      --pagefind-ui-image-border-radius: 4px;
+      --pagefind-ui-image-box-ratio: 3 / 2;
+      --pagefind-ui-font: var(--font-body);
+    }
+    .pagefind-ui__search-input:focus {
+      border-color: var(--color-accent) !important;
+    }
+    .pagefind-ui__result-link {
+      color: var(--color-primary) !important;
+    }
+    .pagefind-ui__result-link:hover {
+      color: var(--color-accent-dark) !important;
+    }
+  </style>
+</Base>

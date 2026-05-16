@@ -1,0 +1,75 @@
+---
+import Base from './Base.astro';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  entry: CollectionEntry<'blog'>;
+}
+
+const { entry } = Astro.props;
+const { data } = entry;
+const url = `/blog/${data.year}/${data.slug}/`;
+const rawMdUrl = `/blog/${data.year}/${data.slug}.md`;
+const dateStr = data.date.toISOString().slice(0, 10);
+const disqusIdentifier = url;
+---
+<Base
+  title={data.title}
+  description={data.description}
+  image={data.image}
+  pageType="article"
+>
+  <article class="article">
+    <header class="article__header">
+      <h1 class="article__title">{data.title}</h1>
+      <div class="article__meta">
+        <time datetime={dateStr}>{dateStr}</time>
+        {data.tags && data.tags.length > 0 && (
+          <span>
+            {data.tags.map((tag, i) => (
+              <>
+                {i > 0 && ', '}
+                <a href={`/tags/${tag}/`}>{tag}</a>
+              </>
+            ))}
+          </span>
+        )}
+      </div>
+    </header>
+
+    {data.image && (
+      <img class="featured" src={data.image} alt={data.title} loading="lazy" />
+    )}
+
+    <div class="article__body">
+      <slot />
+    </div>
+
+    <footer class="article__footer">
+      <p>
+        <a href={rawMdUrl} class="button">↓ Download as markdown</a>
+      </p>
+      <p class="text-faint">
+        Tagged: <span class="article__tags">
+          {data.tags && data.tags.length > 0
+            ? data.tags.map((tag) => <a href={`/tags/${tag}/`}>{tag}</a>)
+            : <em>untagged</em>}
+        </span>
+      </p>
+    </footer>
+
+    <div id="disqus_thread"></div>
+    <script is:inline define:vars={{ disqusIdentifier }}>
+      (function () {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://ddrscottgithubio.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', String(+new Date()));
+        window.disqus_config = function () {
+          this.page.identifier = disqusIdentifier;
+          this.page.url = window.location.href;
+        };
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+  </article>
+</Base>

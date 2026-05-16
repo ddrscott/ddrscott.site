@@ -1,0 +1,28 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  entry: CollectionEntry<'blog'>;
+}
+
+const { entry } = Astro.props;
+const { data } = entry;
+const url = `/blog/${data.year}/${data.slug}/`;
+const dateStr = data.date.toISOString().slice(0, 10);
+---
+<article class="post-card">
+  <a href={url}>
+    {data.image && (
+      <img class="post-card__image" src={data.image} alt={data.title} loading="lazy" />
+    )}
+    <div class="post-card__body">
+      <h3 class="post-card__title">{data.title}</h3>
+      <div class="post-card__meta">
+        <time datetime={dateStr}>{dateStr}</time>
+        {data.tags && data.tags.length > 0 && (
+          <span> · {data.tags.slice(0, 3).join(', ')}</span>
+        )}
+      </div>
+    </div>
+  </a>
+</article>

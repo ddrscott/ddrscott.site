@@ -1,0 +1,45 @@
+---
+import Base from '../layouts/Base.astro';
+
+const projects = [
+  { name: 'Smoke', url: 'https://github.com/ddrscott/smoke', desc: 'Make your terminal smoke.' },
+  { name: 'Fake Pipe / Anonymizer', url: 'https://github.com/ddrscott/fake_pipe', desc: 'A simple way to anonymize data for exporting to various departments for analytics and troubleshooting. Annotate a DB schema with special comments that trigger different data mutations.' },
+  { name: 'Thread Logger', url: 'https://github.com/ddrscott/thread_logger', desc: 'A logger wrapper that keeps in memory a ring buffer of log lines isolated to the Thread.current. Useful for accessing log history when exceptions happen.' },
+  { name: 'Ansinine', url: 'https://github.com/ddrscott/ansinine', desc: 'Asinine things to do with ANSI escape codes.' },
+  { name: 'Flameboyant', url: 'https://github.com/ddrscott/flameboyant', desc: 'Ruby profile with flame graphs.' },
+  { name: 'GCP Directory', url: 'https://github.com/ddrscott/gcp_directory', desc: 'Listen to a directory for new files and send them to Google Cloud Print.' },
+  { name: 'Golumn', url: 'https://github.com/ddrscott/golumn', desc: 'A desktop CSV viewer to replace the column command. Think column with a "g". Bridges the command line and desktop divide by presenting tabular data outside the confines of the terminal.' },
+  { name: 'Hipaatitis', url: 'https://github.com/ddrscott/hipaatitis', desc: 'A fake reference medical CRM with fake data and naughty queries.' },
+  { name: 'Listen SQL', url: 'https://github.com/ddrscott/listen_sql', desc: 'Helper scripts to monitor SQL file changes and execute them using psql.' },
+  { name: 'Math Finder', url: 'https://ddrscott.github.io/math-finder/', desc: 'Find math problems in the number grid. Kids love it. Solver included.' },
+  { name: 'Model Mirror', url: 'https://github.com/ddrscott/model_mirror', desc: 'A basic viewer of your Rails models without needing to configure your model relationships in YACF (Yet Another Config File). Inspects existing ActiveRecord associations via reflection.' },
+  { name: 'Poppy', url: 'https://github.com/ddrscott/poppy', desc: 'Always-on-top resizable dialog displaying a URL.' },
+  { name: 'S3 Index', url: 'https://github.com/ddrscott/s3_index', desc: 'Catalog of S3 objects to easily query metadata. S3 can list objects but it is slow. S3Index saves and queries that list using standard DB tools and SQL.' },
+  { name: 'Slack CLI', url: 'https://github.com/ddrscott/slack_cli', desc: 'Post Slack messages from CLI.' },
+  { name: 'Socket2me', url: 'https://github.com/ddrscott/socket2me', desc: 'Execute Javascript in the browser from the server using WebSockets.' },
+  { name: 'SQL Probe', url: 'https://github.com/ddrscott/sql_probe', desc: 'Trace SQL utilization in your application with a UI to investigate how tables are accessed.' },
+  { name: 'Stream Stats', url: 'https://github.com/ddrscott/stream_stats', desc: 'Output statistics about data from stdin while redirecting the data to stdout. Similar to pv, which I did not know about until after I created this.' },
+  { name: 'Sudoku', url: 'https://github.com/ddrscott/sudoku', desc: 'Solver using backtracking, prioritizing fewer choices first.' },
+  { name: 'vim-cycle-movements', url: 'https://github.com/ddrscott/vim-cycle-movements', desc: 'Mechanism to perform different movements based on repetition.' },
+  { name: 'vim-sendtext', url: 'https://github.com/ddrscott/vim-sendtext', desc: 'SendText-like support for running Vim with iTerm2.' },
+  { name: 'vim-side-search', url: 'https://github.com/ddrscott/vim-side-search', desc: 'Adds ag output to a side buffer with quick navigation mappings using comfortable Vim conventions.' },
+  { name: 'vim-textobj-anyblock', url: 'https://github.com/ddrscott/vim-textobj-anyblock', desc: 'Guess the surrounding text object.' },
+  { name: 'vim-window', url: 'https://github.com/ddrscott/vim-window', desc: 'Makes Vim window layouts easier. Default mappings make managing more than a couple windows difficult.' },
+  { name: 'wheeler', url: 'https://github.com/ddrscott/wheeler', desc: 'A naive Wheel of Fortune solver. Indexes sampled text into every possible contiguous combination of words up to a max phrase length.' },
+];
+---
+<Base title="Projects" description="Public projects by Scott Pierce. Most popular: the Vim plugins.">
+  <h1>Projects</h1>
+  <p>
+    Here's a list of Scott's public projects. The Vim projects are the most popular.
+    Most of the projects could use some TLC, but they worked at one point in time and served the author well.
+  </p>
+
+  {projects.map((p) => (
+    <section>
+      <h2>{p.name}</h2>
+      <p><a href={p.url}>{p.url}</a></p>
+      <p>{p.desc}</p>
+    </section>
+  ))}
+</Base>

@@ -1,0 +1,44 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('blog');
+  const tagMap = new Map<string, CollectionEntry<'blog'>[]>();
+  for (const entry of entries) {
+    for (const tag of entry.data.tags ?? []) {
+      const bucket = tagMap.get(tag) ?? [];
+      bucket.push(entry);
+      tagMap.set(tag, bucket);
+    }
+  }
+  return [...tagMap.entries()].map(([tag, posts]) => ({
+    params: { tag },
+    props: { tag, posts },
+  }));
+}
+
+interface Props {
+  tag: string;
+  posts: CollectionEntry<'blog'>[];
+}
+
+const { tag, posts } = Astro.props;
+const sorted = posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+<Base title={`Tagged: ${tag}`} description={`Posts tagged ${tag}.`}>
+  <h1>Tagged: <code>{tag}</code></h1>
+  <p class="text-muted">{sorted.length} post{sorted.length === 1 ? '' : 's'}. <a href="/tags/">All tags</a></p>
+  <ul class="archive-list">
+    {sorted.map((entry) => {
+      const dateStr = entry.data.date.toISOString().slice(0, 10);
+      return (
+        <li>
+          <time datetime={dateStr}>{dateStr}</time>
+          <a href={`/blog/${entry.data.year}/${entry.data.slug}/`}>{entry.data.title}</a>
+        </li>
+      );
+    })}
+  </ul>
+</Base>
