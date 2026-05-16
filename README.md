@@ -102,10 +102,6 @@ image: /images/2026/featured.png  # optional
 
 Then `make build` here pulls it in automatically. To use a featured image, drop it in `~/life/content/images/{year}/` first.
 
-## Legacy
-
-The previous MkDocs source is preserved under `legacy/` for reference (not built). The MkDocs custom Python plugin powered a "recent posts with image" filter that's now handled by `getCollection('blog').filter((e) => e.data.image)` in `src/pages/index.astro`.
-
 ## Rollback
 
 If the new site breaks something on deploy, `git -C ../ddrscott.github.io reset --hard pre-astro-migration` restores the MkDocs-era HEAD.
